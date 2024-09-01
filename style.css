@@ -1,0 +1,105 @@
+/* General Styling */
+body {
+    scroll-behavior: smooth;
+    font-family: sans-serif; 
+    line-height: 1.6;
+    margin: 0;
+    background-color: #121212; /* Dark background */
+    color: #f5f5f5; /* Light text */
+    text-align: center; 
+}
+
+header {
+    padding: 2em 0;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+    text-shadow: 2px 2px #333; /* Subdued text shadow */
+}
+
+#animated-text {
+    font-weight: bold;
+    font-size: 1.2em;
+    white-space: nowrap; /* Keep text on one line */
+    overflow: hidden; /* Hide overflowing text */
+    animation: typing 3.5s steps(40, end) infinite; /* Typing animation */
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 2em 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 1em;
+}
+
+a {
+    text-decoration: none;
+    color: #f5f5f5;
+    padding: 0.5em 1em;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a:hover {
+    background-color: #333;
+    color: #64ffda; /* Accent color */
+}
+
+/* Main Content Styling */
+section {
+    padding: 3em 2em;
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+h2 {
+    color: #64ffda; /* Accent color */
+    font-size: 2em;
+    margin-bottom: 1em;
+    border-bottom: 2px solid #333;
+}
+
+p {
+    text-align: justify;
+}
+
+.skills{
+    text-align: left;
+    list-style-type: square;
+}
+
+.contact{
+    text-align: left;
+    list-style-type: square;
+}
+
+
+/* Project & Publication Sections */
+.project, .publication {
+    margin-bottom: 2em;
+    background-color: rgba(255, 255, 255, 0.05); /* Very subtle background */
+    padding: 1.5em;
+    border-radius: 5px;
+}
+
+.project h3, .publication h3 {
+    color: #64ffda; 
+}
+
+/* Footer Styling */
+footer {
+    padding: 2em 0;
+    color: #999; 
+    font-size: 0.9em;
+}
